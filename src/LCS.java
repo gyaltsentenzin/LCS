@@ -11,8 +11,6 @@ public class LCS {
             }
         }
 
-
-        
         
         for (int i = 1; i < returnString.length; i++) {
             for(int j = 1; i < returnString[0].length; j++) {
