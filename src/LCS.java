@@ -16,7 +16,7 @@ public class LCS {
         for (int iRow = 1; iRow < rowLength; iRow++) {
             for(int jCol = 1; jCol < colLength; jCol++) {
                 if(first[jCol-1] == second[iRow-1]) {
-                    comparisonMatrix[iRow][jCol] = comparisonMatrix[iRow-1][jCol-1] + first[iRow];
+                    comparisonMatrix[iRow][jCol] = comparisonMatrix[iRow-1][jCol-1] + first[jCol-1];
                 }
                 else {
                     int topNeighbor = comparisonMatrix[iRow-1][jCol].length();
@@ -50,11 +50,15 @@ public class LCS {
 
     public static void main(String[] args) throws Exception {
         LCS lcs = new LCS();
-        // String s1 = "BANANA";
-        // String s2 = "ATANA";
+        
+        String s1 = "BANANA";
+        String s2 = "ATANA";
 
-        String s1 = "cgtcgttatccgtcactggttgagatcgagtaagcaagacg";
-        String s2 = "caaccatcgagtttgacgataagccgcaccagcgcgacat";
+        // String s1 = "cgtcgttatccgtcactggttgagatcgagtaagcaagacg";
+        // String s2 = "caaccatcgagtttgacgataagccgcaccagcgcgacat";
+
+        // String s1 = "aa";
+        // String s2 = "abapa";
 
         char[] first = s1.toCharArray();
         char[] second = s2.toCharArray();
