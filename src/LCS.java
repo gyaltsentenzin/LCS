@@ -51,11 +51,11 @@ public class LCS {
     public static void main(String[] args) throws Exception {
         LCS lcs = new LCS();
         
-        String s1 = "BANANA";
-        String s2 = "ATANA";
+        // String s1 = "BANANA";
+        // String s2 = "ATANA";
 
-        // String s1 = "cgtcgttatccgtcactggttgagatcgagtaagcaagacg";
-        // String s2 = "caaccatcgagtttgacgataagccgcaccagcgcgacat";
+        String s1 = "cgtcgttatccgtcactggttgagatcgagtaagcaagacg";
+        String s2 = "caaccatcgagtttgacgataagccgcaccagcgcgacat";
 
         // String s1 = "aa";
         // String s2 = "abapa";
